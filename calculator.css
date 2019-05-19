@@ -1,0 +1,16 @@
+#calculator,
+.btn-calc {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+#calculator {
+    width: 300px;
+    padding: 3px;
+    margin-left: 15px;
+}
+.btn-calc {
+    margin: 7px 0;
+}
+#visor {
+    background-color: #fff;
+}
