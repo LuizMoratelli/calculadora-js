@@ -35,6 +35,8 @@ function calcular() {
     op = null;
 
     atualizarVisor(num1);
+
+    return num1;
 }
 
 function numero(n) {
@@ -51,6 +53,10 @@ function numero(n) {
 function operador(o) {
     if (o == '=') {
         calcular();
+    } else if (op != null) {
+        n1 = calcular();
+        op = o;
+        atualizarVisor(o);
     } else {
         op = o;
         atualizarVisor(o);
